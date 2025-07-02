@@ -7,7 +7,7 @@
   
 [🌐**Project Page**](https://ac-dit.github.io/) | [✍️**Paper**](??)
 
-[Sixiang Chen](https://cscsx.github.io/)\*, [Jiaming Liu](https://liujiaming1996.github.io/)\*, [Siyuan Qian](https://siriyep.github.io/)\*, Han Jiang, [Xiaoqi Li](https://clorislili.github.io/clorisLi/), [Renrui Zhang](https://zrrskywalker.github.io/), [Zhuoyang Liu](https://zhuoyangliu2005.github.io/), [Chenyang Gu](https://gaystarc.github.io/), [Chengkai Hou](https://jackhck.github.io/), Pengwei Wang, Zhongyuan Wang, [Shanghang Zhang](https://www.shanghangzhang.com)
+[Sixiang Chen](https://cscsx.github.io/)\*, [Jiaming Liu](https://liujiaming1996.github.io/)\*, [Siyuan Qian](https://siriyep.github.io/)\*, Han Jiang, [Lily Li](https://clorislili.github.io/clorisLi/), [Renrui Zhang](https://zrrskywalker.github.io/), [Zhuoyang Liu](https://zhuoyangliu2005.github.io/), [Chenyang Gu](https://gaystarc.github.io/), [Chengkai Hou](https://jackhck.github.io/), Pengwei Wang, Zhongyuan Wang, [Shanghang Zhang](https://www.shanghangzhang.com)
 
 </div>
 
