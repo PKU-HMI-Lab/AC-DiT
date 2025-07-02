@@ -7,7 +7,7 @@
   
 [🌐**Project Page**](https://ac-dit.github.io/) | [✍️**Paper**](??)
 
-[Sixiang Chen](https://cscsx.github.io/)*, [Jiaming Liu](https://liujiaming1996.github.io/)\*$^\dagger$, [Siyuan Qian](https://siriyep.github.io/)$^\ddagger$, [Han Jiang]()$^\ddagger$, [Zhuoyang Liu](https://zhuoyangliu2005.github.io/), [Chenyang Gu](https://gaystarc.github.io/), [Xiaoqi Li](https://clorislili.github.io/clorisLi/), [Chengkai Hou](https://jackhck.github.io/), [Pengwei Wang](), [Zhongyuan Wang](https://lift3d-web.github.io/),  [Renrui Zhang](https://zrrskywalker.github.io/), [Shanghang Zhang](https://www.shanghangzhang.com)
+[Sixiang Chen](https://cscsx.github.io/)\*, [Jiaming Liu](https://liujiaming1996.github.io/)\*, [Siyuan Qian](https://siriyep.github.io/)\*, Han Jiang, [Xiaoqi Li](https://clorislili.github.io/clorisLi/), [Renrui Zhang](https://zrrskywalker.github.io/), [Zhuoyang Liu](https://zhuoyangliu2005.github.io/), [Chenyang Gu](https://gaystarc.github.io/), [Chengkai Hou](https://jackhck.github.io/), Pengwei Wang, Zhongyuan Wang, [Shanghang Zhang](https://www.shanghangzhang.com)
 
 </div>
 
@@ -17,8 +17,8 @@
 
 ## ✨ News ✨
 
-- [2024/06/20] AC-DiT is now live on arXiv! 🚀 The code is coming soon! 🔥
-
+- The code is coming in several weeks (before 2025/07/20)! 🔥
+- [TBD] AC-DiT is now live on arXiv! 🚀 
 
 ## 📢 Coming Soon 📢
 
