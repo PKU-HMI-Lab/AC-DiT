@@ -2,10 +2,7 @@
 
 # AC-DiT: Adaptive Coordination Diffusion Transformer for Mobile Manipulation
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-  
-[🌐**Project Page**](https://ac-dit.github.io/) | [✍️**Paper**](??)
+[🌐**Website**](https://ac-dit.github.io/) | [📚**arXiv**](https://arxiv.org/abs/2507.01961)
 
 [Sixiang Chen](https://cscsx.github.io/)\*, [Jiaming Liu](https://liujiaming1996.github.io/)\*, [Siyuan Qian](https://siriyep.github.io/)\*, Han Jiang, [Lily Li](https://clorislili.github.io/clorisLi/), [Renrui Zhang](https://zrrskywalker.github.io/), [Zhuoyang Liu](https://zhuoyangliu2005.github.io/), [Chenyang Gu](https://gaystarc.github.io/), [Chengkai Hou](https://jackhck.github.io/), Pengwei Wang, Zhongyuan Wang, [Shanghang Zhang](https://www.shanghangzhang.com)
 
@@ -18,7 +15,7 @@
 ## ✨ News ✨
 
 - The code is coming in several weeks (before 2025/07/20)! 🔥
-- [TBD] AC-DiT is now live on arXiv! 🚀 
+- [2025/07/03] AC-DiT has now been posted on arXiv! 🚀 
 
 ## 📢 Coming Soon 📢
 
@@ -30,5 +27,13 @@
 ## 📚 BibTeX 📚
 
 ```bibtex
-to be defined
+@misc{chen2025acditadaptivecoordinationdiffusion,
+      title={AC-DiT: Adaptive Coordination Diffusion Transformer for Mobile Manipulation}, 
+      author={Sixiang Chen and Jiaming Liu and Siyuan Qian and Han Jiang and Lily Li and Renrui Zhang and Zhuoyang Liu and Chenyang Gu and Chengkai Hou and Pengwei Wang and Zhongyuan Wang and Shanghang Zhang},
+      year={2025},
+      eprint={2507.01961},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2507.01961}, 
+}
 ```
