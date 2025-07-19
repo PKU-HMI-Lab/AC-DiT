@@ -14,7 +14,7 @@
 
 ## ✨ News ✨
 
-- The code is coming in several weeks (before 2025/07/20)! 🔥
+- The code is coming in several weeks (before 2025/08/03)! 🔥
 - [2025/07/03] AC-DiT has now been posted on arXiv! 🚀 
 
 ## 📢 Coming Soon 📢
