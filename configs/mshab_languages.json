@@ -1,0 +1,178 @@
+[
+    {
+        "task": "set_table",
+        "subtask": "close",
+        "object": "fridge",
+        "instructions": [
+            "Go to the fridge and shut it.",
+            "Walk over to the fridge and close it.",
+            "Move to the fridge and push the door shut.",
+            "Head to the fridge and close the door.",
+            "Approach the fridge and shut the door.",
+            "Navigate to the fridge and close it.",
+            "Travel to the fridge and seal it shut.",
+            "Make your way to the fridge and close it.",
+            "Go near the fridge and push it closed.",
+            "Advance to the fridge and shut it properly.",
+            "Proceed to the fridge and close the door.",
+            "Move toward the fridge and shut it tight.",
+            "Walk up to the fridge and close it securely.",
+            "Step up to the fridge and shut the door.",
+            "Go to the fridge and press the door closed."
+        ]
+    },
+    {
+        "task": "set_table",
+        "subtask": "close",
+        "object": "kitchen_counter",
+        "instructions": [
+            "Go to the kitchen counter and close the drawer.",
+            "Walk over to the kitchen counter and shut the drawer.",
+            "Move to the kitchen counter and push the drawer closed.",
+            "Head to the kitchen counter and close the drawer.",
+            "Approach the kitchen counter and shut the drawer.",
+            "Navigate to the kitchen counter and close the drawer.",
+            "Travel to the kitchen counter and shut the drawer.",
+            "Make your way to the kitchen counter and close the drawer properly.",
+            "Go near the kitchen counter and push the drawer shut.",
+            "Advance to the kitchen counter and close the drawer.",
+            "Proceed to the kitchen counter and close the drawer.",
+            "Move toward the kitchen counter and shut the drawer tight.",
+            "Walk up to the kitchen counter and close the drawer.",
+            "Step up to the kitchen counter and push the drawer closed.",
+            "Go to the kitchen counter and seal the drawer shut."
+        ]
+    },
+    {
+        "task": "set_table",
+        "subtask": "open",
+        "object": "fridge",
+        "instructions": [
+            "Go to the fridge and open it.",
+            "Walk over to the fridge and pull it open.",
+            "Move to the fridge and open the door.",
+            "Head to the fridge and open it up.",
+            "Approach the fridge and open the door.",
+            "Navigate to the fridge and open it.",
+            "Travel to the fridge and pull the door open.",
+            "Make your way to the fridge and open it.",
+            "Go near the fridge and open it.",
+            "Advance to the fridge and open the door.",
+            "Proceed to the fridge and open it carefully.",
+            "Move toward the fridge and pull it open.",
+            "Walk to the fridge and open it wide.",
+            "Step up to the fridge and open the door.",
+            "Go to the fridge and swing the door open."
+        ]
+    },
+    {
+        "task": "set_table",
+        "subtask": "open",
+        "object": "kitchen_counter",
+        "instructions": [
+            "Go to the kitchen counter and open it.",
+            "Walk over to the kitchen counter and pull it open.",
+            "Move to the kitchen counter and open the drawer.",
+            "Head to the kitchen counter and open what's there.",
+            "Approach the kitchen counter and open it.",
+            "Navigate to the kitchen counter and open the compartment.",
+            "Travel to the kitchen counter and open it up.",
+            "Make your way to the kitchen counter and open the object.",
+            "Go near the kitchen counter and open it.",
+            "Advance to the kitchen counter and open what’s in front.",
+            "Proceed to the kitchen counter and pull it open.",
+            "Move toward the kitchen counter and open the item.",
+            "Walk to the kitchen counter and open the accessible part.",
+            "Step up to the kitchen counter and open whatever is closed.",
+            "Go to the kitchen counter and swing the door or drawer open."
+        ]
+    },
+    {
+        "task": "set_table",
+        "subtask": "pick",
+        "object": "013_apple",
+        "instructions": [
+            "Go to the apple and grab it.",
+            "Approach the apple and pick it up.",
+            "Move toward the apple and lift it.",
+            "Walk to the apple and take it.",
+            "Head over to the apple and collect it.",
+            "Navigate to the apple and retrieve it.",
+            "Make your way to the apple and pick it up.",
+            "Go near the apple and pick it up.",
+            "Move in the direction of the apple and grasp it.",
+            "Travel to the apple and lift it.",
+            "Proceed to the apple and take hold of it.",
+            "Approach the apple and grasp it firmly.",
+            "Move up to the apple and pick it up.",
+            "Advance to the apple and pick it up.",
+            "Walk over to the apple and grab it."
+        ]
+    },
+    {
+        "task": "set_table",
+        "subtask": "pick",
+        "object": "024_bowl",
+        "instructions": [
+            "Go to the bowl and grab it.",
+            "Approach the bowl and pick it up.",
+            "Move toward the bowl and lift it.",
+            "Walk to the bowl and take it.",
+            "Head over to the bowl and collect it.",
+            "Navigate to the bowl and retrieve it.",
+            "Make your way to the bowl and pick it up.",
+            "Go near the bowl and pick it up.",
+            "Move in the direction of the bowl and grasp it.",
+            "Travel to the bowl and lift it.",
+            "Proceed to the bowl and take hold of it.",
+            "Approach the bowl and grasp it firmly.",
+            "Move up to the bowl and pick it up.",
+            "Advance to the bowl and pick it up.",
+            "Walk over to the bowl and grab it."
+        ]
+    },
+    {
+        "task": "set_table",
+        "subtask": "place",
+        "object": "013_apple",
+        "instructions": [
+            "Go to the shelf and place the apple on it.",
+            "Walk over to the shelf and set the apple down.",
+            "Move to the shelf and put the apple there.",
+            "Head to the shelf and lay the apple down.",
+            "Approach the shelf and place the apple down.",
+            "Navigate to the shelf and drop off the apple.",
+            "Travel to the shelf and put the apple in place.",
+            "Make your way to the shelf and leave the apple there.",
+            "Go near the shelf and set the apple down.",
+            "Advance to the shelf and place the apple on it.",
+            "Proceed to the shelf and lay the apple there.",
+            "Move toward the shelf and put the apple down gently.",
+            "Walk to the shelf and release the apple onto it.",
+            "Step up to the shelf and set the apple in position.",
+            "Go to the shelf and drop the apple off."
+        ]
+    },
+    {
+        "task": "set_table",
+        "subtask": "place",
+        "object": "024_bowl",
+        "instructions": [
+            "Go to the table and place the bowl on it.",
+            "Walk over to the table and set the bowl down.",
+            "Move to the table and put the bowl there.",
+            "Head to the table and lay the bowl down.",
+            "Approach the table and place the bowl down.",
+            "Navigate to the table and drop off the bowl.",
+            "Travel to the table and put the bowl in place.",
+            "Make your way to the table and leave the bowl there.",
+            "Go near the table and set the bowl down.",
+            "Advance to the table and place the bowl on it.",
+            "Proceed to the table and lay the bowl there.",
+            "Move toward the table and put the bowl down gently.",
+            "Walk to the table and release the bowl onto it.",
+            "Step up to the table and set the bowl in position.",
+            "Go to the table and drop the bowl off."
+        ]
+    }
+]

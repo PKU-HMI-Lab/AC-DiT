@@ -1,0 +1,56 @@
+seed: 0
+
+eval_env:
+  make_env: True
+
+  env_id: "PickSubtaskTrain-v0"
+  num_envs: 252
+  max_episode_steps: 200
+ 
+  continuous_task: True
+
+  cat_state: True
+  cat_pixels: False
+  frame_stack: 1
+
+  stationary_base: False
+  stationary_torso: False
+  stationary_head: True
+
+  task_plan_fp: ~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/task_plans/tidy_house/pick/train/all.json
+  spawn_data_fp: "~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/spawn_data/tidy_house/pick/train/spawn_data.pt"
+
+  record_video: False
+  info_on_video: True
+
+  extra_stat_keys: []
+
+  env_kwargs:
+    robot_force_mult: 0.001
+    robot_force_penalty_min: 0.2
+    target_randomization: False
+
+algo:
+  name: bc
+
+  lr: 3e-4
+  batch_size: 512
+
+  epochs: 100
+  eval_freq: 1
+  log_freq: 1
+  save_freq: 1
+
+  trajs_per_obj: all
+  data_dir_fp: null
+  max_cache_size: 0
+
+  save_backup_ckpts: False
+
+logger:
+  workspace: mshab_exps
+  exp_name: bc-pick
+  clear_out: True
+  
+  tensorboard: True
+  wandb: False

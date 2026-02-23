@@ -1,0 +1,91 @@
+seed: 0
+
+env:
+  make_env: True
+
+  env_id: "PickSubtaskTrain-v0"
+  num_envs: 189
+  max_episode_steps: 100
+ 
+  continuous_task: True
+
+  cat_state: True
+  cat_pixels: False
+  frame_stack: 3
+
+  stationary_base: False
+  stationary_torso: False
+  stationary_head: True
+
+  task_plan_fp: ~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/task_plans/tidy_house/pick/train/all.json
+  spawn_data_fp: "~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/spawn_data/tidy_house/pick/train/spawn_data.pt"
+
+  record_video: False
+  info_on_video: False
+
+  extra_stat_keys: []
+
+  env_kwargs:
+    robot_force_mult: 0.001
+    robot_force_penalty_min: 0.2
+    target_randomization: False
+
+eval_env:
+  num_envs: 189
+  max_episode_steps: 200
+
+  record_video: False
+  info_on_video: True
+
+algo:
+  name: sac
+  total_timesteps: 50_000_000
+
+  # replay buffer
+  replay_buffer_capacity: 1_000_000
+
+  # train
+  init_steps: 5000
+  batch_size: 512
+
+  # (shared) encoders
+  critic_encoder_tau: 0.005
+  cnn_features: [32, 64, 128, 256]
+  cnn_filters: [3, 3, 3, 3]
+  cnn_strides: [2, 2, 2, 2]
+  cnn_padding: "valid"
+  encoder_pixels_feature_dim: 50
+  encoder_state_feature_dim: 50
+  detach_encoder: False
+
+  # critic
+  critic_hidden_dims: [256, 256, 256]
+  critic_lr: 3e-4
+  critic_layer_norm: True
+  critic_dropout: null
+  critic_beta: 0.9
+  critic_tau: 0.005
+  critic_target_update_freq: 2
+
+  # actor
+  actor_hidden_dims: [256, 256, 256]
+  actor_lr: 3e-4
+  actor_beta: 0.9
+  actor_log_std_min: -20
+  actor_log_std_max: 2
+  actor_update_freq: 2
+
+  # sac
+  discount: 0.9
+  init_temperature: 0.1
+  alpha_lr: 3e-4
+  alpha_beta: 0.9
+
+
+logger:
+  workspace: mshab_exps
+  exp_name: sac-pick
+  clear_out: True
+  
+  tensorboard: True
+  wandb: False

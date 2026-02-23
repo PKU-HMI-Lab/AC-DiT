@@ -1,0 +1,67 @@
+# Package ######################################################################
+
+[build-system]
+requires = ["setuptools >= 62.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mshab"
+description = "ManiSkill-HAB"
+readme = "README.md"
+requires-python = ">= 3.8"
+authors = [{ name = "Arth Shukla", email = "arshukla@ucsd.edu" }, { name = "Stone Tao", email = "stao@ucsd.edu" }, { name = "Hao Su", email = "haosu@ucsd.edu" }]
+license = { text = "MIT License" }
+keywords = ["Reinforcement Learning", "Robotics", "Jax", "RL", "AI"]
+classifiers = [
+    "Development Status :: 4 - Beta",  # change to `5 - Production/Stable` when ready
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+]
+dependencies = [
+    "torch",
+    "dacite",
+    "shortuuid",
+    "huggingface_hub[cli]"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+
+train = ["omegaconf", "wandb", "tensorboard", "tensorboardX", "diffusers", "msgpack", "torchvision"]
+dev = ["ipdb", "jupyterlab", "ipython", "black", "isort"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["mshab", "mshab.*"]
+
+# Linters and Test tools #######################################################
+
+[tool.black]
+line-length = 88
+safe = true
+
+[tool.isort]
+atomic = true
+profile = "black"
+src_paths = ["mshab", "scripts"]
+extra_standard_library = ["typing_extensions"]
+indent = 4
+lines_after_imports = 2
+multi_line_output = 3
+line_length = 150
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "GYMNASIUM", "LEARNING", "SAPIEN", "MANI_SKILL", "DIFFUSERS", "MSHAB", "LOCALFOLDER"]
+known_mshab = ["mshab"]
+known_diffusers = ["diffusers"]
+known_mani_skill = ["mani_skill"]
+known_sapien = ["sapien"]
+known_learning = ["torch", "numpy", "transforms3d"]
+known_gymnasium = ["gymnasium"]
+known_third_party = ["wandb", "tensorboard", "tensorboardX", "omegaconf", "dacite", "torch"]

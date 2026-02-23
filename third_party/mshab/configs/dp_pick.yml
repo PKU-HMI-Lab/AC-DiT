@@ -1,0 +1,68 @@
+seed: 0
+
+eval_env:
+  make_env: True
+
+  env_id: "PickSubtaskTrain-v0"
+  num_envs: 63
+  max_episode_steps: 200
+ 
+  continuous_task: True
+
+  cat_state: True
+  cat_pixels: False
+  frame_stack: null
+  stack: 2
+
+  stationary_base: False
+  stationary_torso: False
+  stationary_head: True
+
+  task_plan_fp: ~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/task_plans/tidy_house/pick/train/all.json
+  spawn_data_fp: "~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/spawn_data/tidy_house/pick/train/spawn_data.pt"
+
+  record_video: False
+  info_on_video: True
+
+  extra_stat_keys: []
+
+  env_kwargs:
+    robot_force_mult: 0.001
+    robot_force_penalty_min: 0.2
+    target_randomization: False
+
+algo:
+  name: diffusion_policy
+
+  # Diffusion Policy
+  lr: 1e-4
+  batch_size: 256
+
+  obs_horizon: 2                # Seems not very important in ManiSkill, 1, 2, 4 work well
+  act_horizon: 8                # Seems not very important in ManiSkill, 4, 8, 15 work well
+  pred_horizon: 16              # 16->8 leads to worse performance, maybe it is like generate a half image; 16->32, improvement is very marginal
+  diffusion_step_embed_dim: 64  # not very important
+  unet_dims: [64, 128, 256]     # default setting is about ~4.5M params
+  n_groups: 8                   # jigu says it is better to let each group have at least 8 channels; it seems 4 and 8 are similar
+
+  # Dataset
+  data_dir_fp: ~/.manisill/data/scene_datasets/replica_cad_dataset/rearrange-dataset/tidy_hosue/pick
+  trajs_per_obj: all
+  max_image_cache_size: 0
+  num_dataload_workers: 0
+
+  # Experiment
+  num_iterations: 1_000_000
+  log_freq: 1000
+  eval_freq: 5000
+  save_freq: 5000
+  torch_deterministic: True
+  save_backup_ckpts: False
+
+logger:
+  workspace: mshab_exps
+  exp_name: dp-pick
+  clear_out: True
+  
+  tensorboard: True
+  wandb: False

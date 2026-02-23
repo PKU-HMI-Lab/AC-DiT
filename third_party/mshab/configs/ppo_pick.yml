@@ -1,0 +1,70 @@
+seed: 0
+
+env:
+  make_env: True
+
+  env_id: "PickSubtaskTrain-v0"
+  num_envs: 189
+  max_episode_steps: 100
+ 
+  continuous_task: True
+
+  cat_state: True
+  cat_pixels: False
+  frame_stack: 3
+
+  stationary_base: False
+  stationary_torso: False
+  stationary_head: True
+
+  task_plan_fp: ~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/task_plans/tidy_house/pick/train/all.json
+  spawn_data_fp: "~/.maniskill/data/scene_datasets/replica_cad_dataset/rearrange/spawn_data/tidy_house/pick/train/spawn_data.pt"
+
+  record_video: False
+  info_on_video: False
+
+  extra_stat_keys: []
+
+  env_kwargs:
+    robot_force_mult: 0.001
+    robot_force_penalty_min: 0.2
+    target_randomization: False
+
+eval_env:
+  num_envs: 63
+  max_episode_steps: 200
+
+  record_video: False
+  info_on_video: True
+
+algo:
+  name: ppo
+
+  total_timesteps: 1_000_000_000
+  learning_rate: 3e-4
+  anneal_lr: False
+  gamma: 0.9
+  gae_lambda: 0.9
+  num_minibatches: 16
+  update_epochs: 4
+  norm_adv: True
+  clip_coef: 0.2
+  clip_vloss: False
+  ent_coef: 0.0
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  target_kl: 0.2
+
+  log_freq: 25
+  save_freq: 25
+  eval_freq: 25
+  finite_horizon_gae: True
+  torch_deterministic: True
+
+logger:
+  workspace: mshab_exps
+  exp_name: ppo-pick
+  clear_out: True
+  
+  tensorboard: True
+  wandb: False

@@ -1,0 +1,24 @@
+[
+    {
+        "task": "set_table",
+        "subtask": "pick",
+        "object": "013_apple",
+        "instructions": [
+            "Locate the apple and seize it.",
+            "Move closer to the apple and lift it up.",
+            "Head towards the apple and raise it.",
+            "Step to the apple and obtain it.",
+            "Go over to the apple and gather it.",
+            "Find your way to the apple and fetch it.",
+            "Position yourself near the apple and lift it up.",
+            "Get close to the apple and lift it up.",
+            "Head in the apple's direction and hold it.",
+            "Journey to the apple and raise it.",
+            "Continue to the apple and grip it.",
+            "Come near the apple and hold it securely.",
+            "Advance toward the apple and lift it up.",
+            "Progress to the apple and lift it up.",
+            "Step over to the apple and seize it."
+        ]
+    }
+]
